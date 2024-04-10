@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 
-import { styles } from "../../constants/styles";
-import { fadeIn } from "../../utils/motion";
 import { testimonials } from "../../constants";
-import { Header } from "../atoms/Header";
-import { TTestimonial } from "../../types";
 import { config } from "../../constants/config";
+import { styles } from "../../constants/styles";
+import { SectionWrapper } from "../../hoc";
+import { TTestimonial } from "../../types";
+import { fadeIn } from "../../utils/motion";
+import { Header } from "../atoms/Header";
 
 const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
   index,
@@ -44,9 +45,9 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
   </motion.div>
 );
 
-const Feedbacks = () => {
+const Body = () => {
   return (
-    <div className="bg-black-100 mt-12 rounded-[20px]">
+    <>
       <div
         className={`${styles.padding} bg-tertiary min-h-[300px] rounded-2xl`}
       >
@@ -59,6 +60,16 @@ const Feedbacks = () => {
           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
         ))}
       </div>
+    </>
+  )
+}
+
+const Bodyx = SectionWrapper(Body, "");
+
+const Feedbacks = () => {
+  return (
+    <div className="bg-black-100 mt-12 rounded-[20px]">
+      <Bodyx />
     </div>
   );
 };
