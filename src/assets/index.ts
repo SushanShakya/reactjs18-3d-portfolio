@@ -59,10 +59,13 @@ import rubina from './people/rubina.jpeg';
 import appstore from './appstore.png';
 import playstore from './playstore.webp';
 
+import fb from './socials/facebook.png';
+import linkedin from './socials/linkedin.png';
+import medium from './socials/medium.png';
+
 export {
   android, appstore, backend, bens, bysst, carrent, close, creator, css,
-  docker,
-  figma, flutter, flutterArchitecture, freelance, git, github, hafnia, html, ims, incwell, invicta, javascript, jobit, linux, lmu, logo, maghao, menu, meta, mobile, mongodb, myra, nazeekai, nodejs, playstore, prasid, python, raralabs, reactjs,
+  docker, fb, figma, flutter, flutterArchitecture, freelance, git, github, hafnia, html, ims, incwell, invicta, javascript, jobit, linkedin, linux, lmu, logo, maghao, medium, menu, meta, mobile, mongodb, myra, nazeekai, nodejs, playstore, prasid, python, raralabs, reactjs,
   redux, rubina, shopify, smartforce, starbucks, tailwind, tesla, threejs, tripguide, typescript, vim, warpedBloc, web, younginnov
 };
 

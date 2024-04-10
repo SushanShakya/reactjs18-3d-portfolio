@@ -32,6 +32,10 @@ export type TProject = {
 
 export type TTechnology = Required<Omit<TCommonProps, "title">>;
 
+export type TSocial = {
+  link: string
+} & Required<Omit<TCommonProps, "title">> 
+
 export type TNavLink = {
   id: string;
 } & Required<Pick<TCommonProps, "title">>;

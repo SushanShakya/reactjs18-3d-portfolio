@@ -3,6 +3,7 @@ import type {
   TNavLink,
   TProject,
   TService,
+  TSocial,
   TTechnology,
   TTestimonial,
 } from "../types";
@@ -12,19 +13,23 @@ import {
   bens,
   bysst,
   creator,
+  fb,
   figma,
   flutter,
   flutterArchitecture,
   freelance,
   git,
+  github,
   hafnia,
   ims,
   incwell,
   invicta,
   javascript,
+  linkedin,
   linux,
   lmu,
   maghao,
+  medium,
   myra,
   nazeekai,
   prasid,
@@ -53,6 +58,10 @@ export const navLinks: TNavLink[] = [
   {
     id: "contact",
     title: "Contact",
+  },
+  {
+    id: "socials",
+    title: "Socials",
   },
 ];
 
@@ -353,5 +362,28 @@ const projects: TProject[] = [
   },
 ];
 
-export { experiences, projects, services, technologies, testimonials };
+const socials: TSocial[] = [
+  {
+    name: "Github",
+    icon: github,
+    link: "https://github.com/SushanShakya",
+  },
+  {
+    name: "LinkedIn",
+    icon: linkedin,
+    link: "https://www.linkedin.com/in/sushan-shakya-8953711a6/",
+  },
+  {
+    name: "Facebook",
+    icon: fb,
+    link: "https://www.facebook.com/sushaan.shakya",
+  },
+  {
+    name: "Medium",
+    icon: medium,
+    link: "https://medium.com/@sushaanshakya88",
+  },
+  
+]
+export { experiences, projects, services, socials, technologies, testimonials };
 
