@@ -1,13 +1,13 @@
-import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
+import Tilt from "react-parallax-tilt";
 
-import { github } from "../../assets";
-import { SectionWrapper } from "../../hoc";
+import { appstore, github, playstore } from "../../assets";
 import { projects } from "../../constants";
-import { fadeIn } from "../../utils/motion";
 import { config } from "../../constants/config";
-import { Header } from "../atoms/Header";
+import { SectionWrapper } from "../../hoc";
 import { TProject } from "../../types";
+import { fadeIn } from "../../utils/motion";
+import { Header } from "../atoms/Header";
 
 const ProjectCard: React.FC<{ index: number } & TProject> = ({
   index,
@@ -16,6 +16,8 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
   tags,
   image,
   sourceCodeLink,
+  playStoreLink,
+  appStoreLink
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -34,16 +36,47 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
               className="h-full w-full rounded-2xl object-cover"
             />
             <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
-              <div
-                onClick={() => window.open(sourceCodeLink, "_blank")}
-                className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
-              >
-                <img
-                  src={github}
-                  alt="github"
-                  className="h-1/2 w-1/2 object-contain"
-                />
-              </div>
+              {
+                sourceCodeLink &&
+                <div
+                  onClick={() => window.open(sourceCodeLink, "_blank")}
+                  className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
+                >
+                  <img
+                    src={github}
+                    alt="github"
+                    className="h-1/2 w-1/2 object-contain"
+                  />
+                </div>
+              }
+              <div style={{ width: 2 }}></div>
+              {
+                playStoreLink &&
+                <div
+                  onClick={() => window.open(playStoreLink, "_blank")}
+                  className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
+                >
+                  <img
+                    src={playstore}
+                    alt="github"
+                    className="h-1/2 w-1/2 object-contain"
+                  />
+                </div>
+              }
+              <div style={{ width: 2 }}></div>
+              {
+                appStoreLink &&
+                <div
+                  onClick={() => window.open(appStoreLink, "_blank")}
+                  className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
+                >
+                  <img
+                    src={appstore}
+                    alt="github"
+                    className="h-1/2 w-1/2 object-contain"
+                  />
+                </div>
+              }
             </div>
           </div>
           <div className="mt-5">

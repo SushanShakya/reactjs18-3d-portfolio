@@ -1,38 +1,45 @@
 import type {
+  TExperience,
   TNavLink,
+  TProject,
   TService,
   TTechnology,
-  TExperience,
   TTestimonial,
-  TProject,
 } from "../types";
 
 import {
-  mobile,
-  backend,
+  android,
+  bens,
+  bysst,
   creator,
-  web,
+  figma,
+  flutter,
+  flutterArchitecture,
+  freelance,
+  git,
+  hafnia,
+  ims,
+  incwell,
+  invicta,
   javascript,
-  typescript,
-  html,
-  css,
+  linux,
+  lmu,
+  maghao,
+  myra,
+  nazeekai,
+  prasid,
+  python,
+  raralabs,
   reactjs,
   redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  rubina,
+  smartforce,
+  typescript,
+  vim,
+  warpedBloc,
+  younginnov
 } from "../assets";
+
 
 export const navLinks: TNavLink[] = [
   {
@@ -51,31 +58,35 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "Flutter",
+    icon: flutter,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "React Native",
+    icon: reactjs,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "Python",
+    icon: python,
   },
   {
-    title: "Content Creator",
+    title: "Scripting",
     icon: creator,
   },
 ];
 
 const technologies: TTechnology[] = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Flutter",
+    icon: flutter,
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "React Native",
+    icon: reactjs,
+  },
+  {
+    name: "Python",
+    icon: python,
   },
   {
     name: "JavaScript",
@@ -86,28 +97,20 @@ const technologies: TTechnology[] = [
     icon: typescript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "Android",
+    icon: android,
+  },
+  {
+    name: "Linux",
+    icon: linux,
+  },
+  {
+    name: "VIM",
+    icon: vim,
   },
   {
     name: "Redux Toolkit",
     icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
   },
   {
     name: "git",
@@ -117,158 +120,238 @@ const technologies: TTechnology[] = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    "title": "Software Craftsman",
+    "companyName": "Rara Labs",
+    "icon": raralabs, // Placeholder
+    "iconBg": "#2B2B2B", // Placeholder
+    "date": "August 2022 - Present",
+    "points": [
+      "Initiator of Clean Architecture and TDD practices",
+      "Interviewed potential candidates for mobile development positions",
+      "Researched and created a library for Bloc-like state management in React Native with scoped updates",
+      "Investigated topics like reflection while researching the Go language",
+      "Cleaned up messy and duplicated code in JavaScript",
+      "Automated daily workflow for APK distribution",
+      "Created technical content" 
+    ]
   },
   {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    "title": "React Native Developer",
+    "companyName": "Invicta Global",
+    "icon": invicta, // Placeholder
+    "iconBg": "#fff", // Placeholder
+    "date": "Aug 2022 - Present",
+    "points": [
+      "Led a team of 3 developers based in India",
+      "Enhanced a project written in JavaScript to improve performance by 50%",
+      "Revitalized messy and duplicated code in Javascript and migrated codebase to Typescript"
+    ]
   },
   {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    "title": "Freelance Flutter Developer",
+    "companyName": "Freelance Professional",
+    "icon": freelance, // Placeholder
+    "iconBg": "#fff", // Placeholder
+    "date": "May 2020 - Present",
+    "points": [
+      "Developed multiple types of projects including E-commerce, Hotel Booking, CRMs",
+      "Collaborated directly or indirectly with companies like Xtraviz, Longtail e-media, Hi-foods, Smartforce, YBC Cleaning, and more", 
+      "Managed outsourced small scale Full Stack Mobile App. Development projects"
+    ]
   },
   {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    "title": "Software Engineer",
+    "companyName": "Maghao",
+    "icon": maghao, // Placeholder
+    "iconBg": "#F1005E", // Placeholder
+    "date": "May 2021 - August 2022",
+    "points": [
+      "Built and developed beautiful UIs in Flutter",
+      "Led the core mobile app development",
+      "Developed 3 apps for customers, sellers, and riders",
+      "Worked with location-based systems and integrated Google Maps"
+    ]
   },
-];
+  {
+    "title": "Head of Mobile Applications",
+    "companyName": "Lanceme Up",
+    "icon": lmu, // Placeholder
+    "iconBg": "#000", // Placeholder
+    "date": "April 2021 - August 2022",
+    "points": [
+      "Handled application development for the entire company",
+      "Built the mobile components of software products",
+      "Handled multiple client projects simultaneously",
+      "Collaborated with designers and developers to create well-crafted mobile applications",
+      "Worked under extreme pressure and completed a one-month client project within 9 days"
+    ]
+  },
+  {
+    "title": "Flutter Developer",
+    "companyName": "Smartforce",
+    "icon": smartforce, // Placeholder
+    "iconBg": "#006BFF", // Placeholder
+    "date": "September 2021 - December 2021",
+    "points": [
+      "Responsible for project research and selecting appropriate technologies",
+      "Created mobile UI based on existing designs",
+      "Worked with PostgreSQL database and Algolia search index",
+      "Utilized Firebase backend with Flutter frontend"
+    ]
+  },
+  {
+    "title": "Mobile Application Developer",
+    "companyName": "YoungInnovations Pvt. Ltd.",
+    "icon": younginnov, // Placeholder 
+    "iconBg": "#fff", // Placeholder
+    "date": "October 2020 - February 2021",
+    "points": [
+      "Researched and learned about state management with BLoC",
+      "Developed a mobile application for a Grievance Collection System",
+      "Automated tasks using WorkManager"
+    ]
+  },
+  {
+    "title": "Flutter Developer",
+    "companyName": "E Deals Nepal",
+    "icon": freelance, // Placeholder
+    "iconBg": "#fff", // Placeholder 
+    "date": "May 2020 - September 2020",
+    "points": [
+      "Modified existing software to improve performance",
+      "Refactored code and used state management techniques to clean up the code", 
+      "Designed and created user interface and connected it to the backend",
+      "Fixed bugs in the existing code"
+    ]
+  },
+  {
+    "title": "Software Engineering Intern", 
+    "companyName": "Incwell", 
+    "icon": incwell, // Placeholder 
+    "iconBg": "#fff", // Placeholder
+    "date": "February 2020 - May 2020",
+    "points": [
+      "Researched and learned about the Flutter framework",
+      "Completed assigned tasks to improve problem-solving skills",
+      "Redesigned an existing app with Flutter",
+      "Built software for an event called Cosmo-Concepts"
+    ]
+  } ,
+  {
+    "title": "Technical Support", 
+    "companyName": "IMS", 
+    "icon": ims, // Placeholder 
+    "iconBg": "#fff", // Placeholder
+    "date": "May 2019 - Aug 2019",
+    "points": [
+      "Dealt Directly with Customers Regarding Database Issues",
+      "Accomplished Data Backup for customers",
+      "Completed Yearly Closing for Multiple Companies"
+    ]
+  } 
+] ;
 
 const testimonials: TTestimonial[] = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "He's been instrumental in projects with national and international clients, consistently delivering clean code that's a breeze to work with.",
+    name: "Prasid Karki",
+    designation: "Senior Frontend Engineer",
+    company: "Niural",
+    image: prasid,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "I can confidently say that he is an exceptional Flutter developer and a well-rounded individual.",
+    name: "Rubina Acharaya",
+    designation: "UI/UX Designer",
+    company: "RARA Labs",
+    image: rubina,
   },
 ];
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+    "name": "Hafnia Analytics Software",
+    "description": "Analytics software used by pool partners of Hafnia (a subsidiary of BW Group) to track and analyze data.",
+    "tags": [
+      { "name": "Flutter", "color": "blue-text-gradient" },
+      { "name": "Analytics", "color": "green-text-gradient" }
     ],
-    image: carrent,
-    sourceCodeLink: "https://github.com/",
+    "image": hafnia, // Placeholder
+    "playStoreLink": "https://play.google.com/store/apps/details?id=com.hafnia&hl=en&gl=US",
+    "appStoreLink": "https://apps.apple.com/us/app/hafnia-pool-analytics/id1621871886"
   },
   {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+    "name": "[warped_bloc] Package",
+    "description": "A Flutter package designed to reduce boilerplate code for BLoC state management, simplifying development and improving code readability.",
+    "tags": [
+      { "name": "Flutter", "color": "blue-text-gradient" },
+      { "name": "BLoC", "color": "green-text-gradient" },
+      { "name": "StateManagement", "color": "pink-text-gradient" }
     ],
-    image: jobit,
-    sourceCodeLink: "https://github.com/",
+    "image": warpedBloc, // Placeholder
+    "sourceCodeLink": "https://pub.dev/packages/warped_bloc" 
   },
   {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+    "name": "Flutter Architecture Generator",
+    "description": "A VS Code extension that helps developers generate a structured Flutter project architecture with over 1300 downloads, promoting code organization and best practices.",
+    "tags": [
+      { "name": "Flutter", "color": "blue-text-gradient" },
+      { "name": "VSCodeExtension", "color": "purple-text-gradient" },
+      { "name": "CodeGeneration", "color": "teal-text-gradient" }
     ],
-    image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    "image": flutterArchitecture, // Placeholder
+    "sourceCodeLink": 'https://github.com/SushanShakya/flutter_folder_structure_generator' // Information not available
+  },
+  {
+    "name": "Myra Mobile Banking",
+    "description": "Mobile banking system developed for SACOOS (NEFSCUN Project), providing users with convenient financial services.",
+    "tags": [
+      { "name": "Flutter", "color": "blue-text-gradient" },
+      { "name": "MobileBanking", "color": "orange-text-gradient" } 
+    ],
+    "image": myra, // Placeholder
+    "playStoreLink": "https://play.google.com/store/apps/details?id=myra.erp.app",
+  },
+  {
+    "name": "Bysst Music Platform",
+    "description": "A platform designed for musicians and artists to share their work and connect with audiences.",
+    "tags": [
+      { "name": "MobileApp", "color": "blue-text-gradient" },
+      { "name": "Music", "color": "indigo-text-gradient" }
+    ],
+    "image": bysst, // Placeholder 
+    "playStoreLink": "https://play.google.com/store/apps/details?id=studio.sdev.music_dist_bysstmusic",
+    "appStoreLink": "https://apps.apple.com/np/app/bysst-music-distribution/id6474940090"
+  },
+  {
+    "name": "Ben's Market App",
+    "description": "App Designed for customers of Ben's Market Store in US.",
+    "tags": [
+      { "name": "MobileApp", "color": "blue-text-gradient" },
+      { "name": "Rewards", "color": "indigo-text-gradient" },
+      { "name": "Loyalty", "color": "red-text-gradient" }
+    ],
+    "image": bens, // Placeholder 
+    "playStoreLink": "https://play.google.com/store/apps/details?id=com.bensmarket.app",
+    "appStoreLink": "https://apps.apple.com/us/app/bens-market/id6446094973"
+  },
+  {
+    "name": "Nazeekai",
+    "description": "Special offer, take part in a loyalty program, earn rewards or receive coupons.",
+    "tags": [
+      { "name": "MobileApp", "color": "blue-text-gradient" },
+      { "name": "Bluetooth", "color": "indigo-text-gradient" },
+    ],
+    "image": nazeekai, // Placeholder 
+    "playStoreLink": "https://play.google.com/store/apps/details?id=com.starnet.najeekai",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { experiences, projects, services, technologies, testimonials };
+
